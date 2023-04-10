@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  height: 65px;
+  border-radius: 8px;
+  padding: 19px 28px;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+}
+
+.my-container-gap {
+  margin-top: 130px;
+}
+
+.my-container {
+  @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20;
+}
+.product-container {
+  @apply grid gap-8  mb-8 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.active {
+  @apply font-medium tracking-wide text-blue-600 transition-colors duration-200;
+}
+
+.default {
+  @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600;
+}
