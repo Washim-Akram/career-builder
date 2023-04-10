@@ -12,6 +12,25 @@
   background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
 }
 
+.btn-secondary {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  height: 49px;
+  border-radius: 4px;
+  padding: 11px 18px;
+}
+
+.btn-outlined {
+  border-radius: 4px;
+  height: 40px;
+  border: 1px solid #7e90fe;
+  color: #9873ff;
+  padding: 9px 19px;
+}
+
 .my-container-gap {
   margin-top: 130px;
 }
