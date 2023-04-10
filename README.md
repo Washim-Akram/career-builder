@@ -13,3 +13,5 @@ Hosted in Netlify -> [CareerBuilder](https://my-website-link.netlify.app/)
 [React Router Dom](https://reactrouter.com/en/main)
 
 [Tailwind CSS](https://tailwindcss.com/)
+
+[Recharts](https://recharts.org/en-US/)
