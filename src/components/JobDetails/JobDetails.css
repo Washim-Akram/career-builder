@@ -1,0 +1,36 @@
+.job-details {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+  border-radius: 8px;
+  width: 424px;
+  padding: 30px;
+  margin-bottom: 24px;
+}
+
+.job-details h3 {
+  color: #1a1919;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  margin-top: 30px;
+}
+
+.job-details hr {
+  border: 1px solid linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  margin-bottom: 24px;
+}
+
+.job-details h6 {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.job-details span {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 500;
+}
