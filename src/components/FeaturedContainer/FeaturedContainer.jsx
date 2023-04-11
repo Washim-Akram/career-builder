@@ -17,6 +17,9 @@ const FeaturedContainer = () => {
                     featuredJobs.slice(0, 4).map((featuredJob) => <Featured key={featuredJob.id} featuredJob={featuredJob}></Featured>)
                 }
             </div>
+            <div className='my-10 mx-auto w-44'>
+                <button className='btn-primary'>See All Jobs</button>
+            </div>
         </div>
     );
 };

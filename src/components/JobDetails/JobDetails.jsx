@@ -5,6 +5,7 @@ import phone from '../../assets/Icons/Frame-2.png';
 import email from '../../assets/Icons/Frame-3.png';
 import address from '../../assets/Icons/Frame-4.png';
 import salary from '../../assets/Icons/Frame.png';
+import { addToDb } from '../../utils/fakeDB';
 import GeneralBanner from '../GeneralBanner/GeneralBanner';
 import './JobDetails.css';
 
@@ -20,6 +21,10 @@ const JobDetails = () => {
         const specificJobDetails = details.find(detail => detail.id === dynamicId);
         setJobDetails(specificJobDetails);
     },[details])
+
+    const handleAddJobToStorage = (id) => {
+        addToDb(id);
+    }
 
     return (
         <div>
@@ -69,9 +74,11 @@ const JobDetails = () => {
                             <h6>Address : <span>{jobDetails.address}</span></h6>
                         </div>
                     </div>
-                    <Link to="/">
-                        <button className='btn-primary w-full'>Apply Now</button>
+
+                    <Link to='/appliedJobs'>
+                    <button onClick={() => handleAddJobToStorage(jobDetails.id)} className='btn-primary w-full'>Apply Now</button>
                     </Link>
+
                 </div>
             </div>
         </div>

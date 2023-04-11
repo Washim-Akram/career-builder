@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Featured = ({featuredJob}) => {
     const {id, compony_logo, job_title, compony_name, remote_or_onsite, location, time, salary} = featuredJob;
     return (
-        <div className='border p-10'>
+        <div className='border p-10 rounded-lg'>
             <img className='mb-8' src={compony_logo} alt={compony_name} />
             <h3 className='text-2xl font-bold mb-2'>{job_title}</h3>
             <h4 className='text-xl text-gray-400 font-medium mb-4'>{compony_name}</h4>
