@@ -1,5 +1,6 @@
 import React from 'react';
 import { Area, AreaChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import GeneralBanner from '../GeneralBanner/GeneralBanner';
 
 const Statistics = () => {
     const assignmentMarks = [
@@ -41,27 +42,32 @@ const Statistics = () => {
 
       ];
     return (
-        <div className='my-container'>
-            <h2 className='text-center font-bold text-blue-400 text-3xl'>Statistics Of Assignment Marks!</h2>
-            <p className='text-center font-medium text-gray-400 mt-2 mb-4'>Using "AreaChart" !</p>
-            <ResponsiveContainer width="100%" height={400}>
-                <AreaChart
-                data={assignmentMarks}
-                margin={{
-                    top: 10,
-                    right: 30,
-                    left: 0,
-                    bottom: 0,
-                }}
-                >
+        <div>
+            <GeneralBanner>
+                <h2 className='text-center font-bold text-blue-400 text-3xl'>Statistics Of Assignment Marks!</h2>
+                <p className='text-center font-medium text-gray-400 mt-2 mb-4'>Using "AreaChart" !</p>
+            </GeneralBanner>
 
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Area type="monotone" dataKey="score" stroke="#8884d8" fill="#8884d8" />
-                </AreaChart>
-            </ResponsiveContainer>
+            <div className='my-container'>
+                <ResponsiveContainer width="100%" height={400}>
+                    <AreaChart
+                    data={assignmentMarks}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 0,
+                        bottom: 0,
+                    }}
+                    >
+
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Area type="monotone" dataKey="score" stroke="#8884d8" fill="#8884d8" />
+                    </AreaChart>
+                </ResponsiveContainer>
+            </div>
         </div>
     );
 };
