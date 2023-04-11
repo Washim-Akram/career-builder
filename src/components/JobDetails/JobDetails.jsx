@@ -29,7 +29,7 @@ const JobDetails = () => {
     return (
         <div>
             <GeneralBanner><h2 className='text-3xl font-extrabold flex items-center justify-center'>Job Details</h2></GeneralBanner>
-            <div className='my-container my-container-gap'>
+            <div className='my-container'>
             <div className='flex flex-col items-center md:items-start md:flex-row gap-5'>
                 <div>
                     <p className='text-gray-500 mb-6'><span className='font-bold text-black'>Job Description: </span>{jobDetails.description}</p>
