@@ -5,6 +5,7 @@ import phone from '../../assets/Icons/Frame-2.png';
 import email from '../../assets/Icons/Frame-3.png';
 import address from '../../assets/Icons/Frame-4.png';
 import salary from '../../assets/Icons/Frame.png';
+import GeneralBanner from '../GeneralBanner/GeneralBanner';
 import './JobDetails.css';
 
 const JobDetails = () => {
@@ -21,8 +22,9 @@ const JobDetails = () => {
     },[details])
 
     return (
-        <div className='my-container'>
-
+        <div>
+            <GeneralBanner><h2 className='text-3xl font-extrabold flex items-center justify-center'>Job Details</h2></GeneralBanner>
+            <div className='my-container my-container-gap'>
             <div className='flex flex-col items-center md:items-start md:flex-row gap-5'>
                 <div>
                     <p className='text-gray-500 mb-6'><span className='font-bold text-black'>Job Description: </span>{jobDetails.description}</p>
@@ -72,6 +74,7 @@ const JobDetails = () => {
                     </Link>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
