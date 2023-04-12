@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bannerImage from '../../assets/Images/P3OLGJ1 copy 1.png';
 import './Banner.css';
 
 const Banner = () => {
@@ -25,7 +24,7 @@ const Banner = () => {
 
                 <div className='relative lg:w-1/2 '>
                     <div className='w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96'>
-                        <img src={bannerImage} alt="A man stand with confident"/>
+                        <img src="https://i.ibb.co/Qn84zsF/P3-OLGJ1-copy-1.png" alt="A man stand with confident"/>
                     </div>
                 </div>
 
