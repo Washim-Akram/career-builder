@@ -4,8 +4,8 @@ const AppliedJob = ({job}) => {
     const {compony_logo, job_title, compony_name, time, location, remote_or_onsite, salary, id} = job;
     return (
         <div className="mb-6">
-            <li className='flex flex-col py-6 sm:flex-row sm:justify-between md:flex-row md:justify-between md:items-center border p-8 rounded-lg'>
-        <div className='flex items-center'>
+            <li className='flex flex-col py-6 md:flex-row justify-between items-center border p-8 rounded-lg'>
+        <div className='flex flex-col md:flex-row items-center'>
             <img
             className='w-60 h-60 border-transparent rounded outline-none sm:w-32 sm:h-32 bg-gray-100 mr-8 p-4'
             src={compony_logo}
@@ -17,6 +17,7 @@ const AppliedJob = ({job}) => {
                 <button className='btn-outlined'>{time}</button>
                 <p className='mt-4 mb-6 text-gray-400 font-medium'>
                 <span className='mr-6'>Location: {location}</span>
+                <br className="block md:hidden "/>
                 <span>{salary}</span> </p>
             </div>
         </div>

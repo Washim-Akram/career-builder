@@ -34,3 +34,11 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 576px) {
+  .job-details {
+    border-radius: 6px;
+    width: 350px;
+    padding: 15px;
+  }
+}

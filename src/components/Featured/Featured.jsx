@@ -12,6 +12,7 @@ const Featured = ({featuredJob}) => {
             <button className='btn-outlined'>{time}</button>
             <p className='mt-4 mb-6 text-gray-400 font-medium'>
                 <span className='mr-6'>Location: {location}</span>
+                <br className='block md:hidden'/>
                 <span>{salary}</span> </p>
             <Link to={`job/${id}`}>
                 <button className='btn-secondary'>View Details</button>

@@ -1,10 +1,10 @@
 # Career Builder
 
-Best career builder platform for finding dream job.
+Best career builder platform for finding your dream job.
 
 ## Live Link
 
-Hosted in Netlify -> [CareerBuilder](https://my-website-link.netlify.app/)
+Hosted in Netlify -> [CareerBuilder](https://career-builder-2023.netlify.app/)
 
 ### Best features of our project
 
